@@ -22,6 +22,7 @@ wget -qO - https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo apt-k
 echo deb https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -sc) main | sudo tee -a /etc/apt/sources.list.d/trivy.list
 apt update
 apt install -y trivy
+trivy --version
 
 sleep 5; clear
 echo "   =================================="
