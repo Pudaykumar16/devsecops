@@ -9,7 +9,7 @@ pipeline {
    }
 
   stages {
-   stage('Stage I: Build') {
+   stage('Stage I: Build1') {
       steps {
         git branch: 'main', credentialsId: 'GitlabCred', url: 'https://gitlab.com/learndevopseasy/devsecops/springboot-build-pipeline.git'
         echo "Building Jar Component ..."
@@ -94,4 +94,5 @@ pipeline {
    
   }
 }
+
 
