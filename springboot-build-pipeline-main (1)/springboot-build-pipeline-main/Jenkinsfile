@@ -1,5 +1,5 @@
 pipeline {
-  agent { label 'build' }
+  agent  any
 
   environment { 
     registry = "dark5980/democicd" 
@@ -87,3 +87,4 @@ pipeline {
     }
   }
 }
+
